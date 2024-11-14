@@ -1,0 +1,1 @@
+#Creamos un nuevo proyecto, con el archivo INIT en su interior. Para indicar a Python que el conjunto de archivos forma parte de un paquete.

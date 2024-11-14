@@ -1,0 +1,33 @@
+import zipfile
+
+#Comprimir
+
+mi_zip = zipfile.ZipFile("archivo_comprimido.zip","w")
+
+mi_zip.write("mi_texto_A.txt")
+mi_zip.write("mi_texto_B.txt")
+
+mi_zip.close()
+
+#Descomprimir
+
+zip_abierto = zipfile.ZipFile("archivo_comprimido.zip","r")
+
+zip_abierto.extractall()
+
+import shutil
+
+#Comprimir
+
+carpeta_origen = "C:\\Users\\PrincesaPolar\\OneDrive\\Escritorio\\Cursos y idiomas\\Cursos\\Python\\Apuntes\\Dia 9"
+
+archivo_destino = "Todo_Comprimido"
+
+shutil.make_archive(archivo_destino,"zip",carpeta_origen)
+
+#Descomprimir
+
+shutil.unpack_archive("Todo_Comprimido.zip","Extraccion Terminada","zip")
+
+
+
